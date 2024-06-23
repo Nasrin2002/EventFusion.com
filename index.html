@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Open+Sans:ital,wght@0,400;0,800;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>EVENT MANAGEMENT SYSTEM</title>
+</head>
+<body>
+    <div id="popup-login" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="form-toggle">
+                <button id="login-toggle" onclick="showLogin()">Login</button>
+                <button id="signup-toggle" onclick="showSignUp()">Sign Up</button>
+            </div>
+            <div id="login-form-container" class="form-container">
+                <h2 class="logintitle">Login</h2>
+                <form id="login-form">
+                    <input type="text" id="login-username" placeholder="Enter Username" name="username" required>
+                    <input type="password" id="login-password" placeholder="Enter password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="signup-form-container" class="form-container" style="display: none;">
+                <h2 class="logintitle">Sign Up</h2>
+                <form id="signup-form">
+                    <input type="text" id="signup-username" placeholder="Enter Username" name="username" required>
+                    <input type="password" id="signup-password" placeholder="Enter Password" name="password" required>
+                    <input type="email" id="signup-email" placeholder="Enter Email ID" name="email" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="homepage" id="home">
+      <!---navigation bar--->
+    <nav>
+        <div class="nav-links">
+            <h1 class="logo">Gala <span>Events</span></h1>            
+            <div class="navlink">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">AboutUs</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#gallery">OurGallery</a></li>
+                            <li><a href="#feedback"> OurCustomer</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                        </ul>
+                    </div></li>
+                    <li><a href="#">MeetOrganizer</a></li>
+                    <li><a href="#">SellTickets</a></li>
+                    <li><a href="#">Decoration</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     </div>
+        <div class="text_home">
+            <h1>We Create , your dreams are true</h1><br>
+            <p>As an event planner, we believe that every event is a unique oppertunity to create a memorable experiences.From meticulous planning to flawless execution, our team is dedicated to bringing your vision to life, ensuring that every details is perfect and every moment is unforgettable.</p><br>
+            <a href="#" class="btn">Schedule your events</a><br>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="ah">About <span>Us</span></h1>
+        <div class="aboutme" id="aboutme">
+
+            <p>Welcome to gala Events,where we transform your visions into unforgettable experiences.With years to
+                expertise in event planning and management,we pride ourselves on our creativity,precision,and commitment to excellence.
+                Whether it's a corporate conferance,a media meeting,or an initimate gathering ,our dedicated team ensures every detail is meticulosly planned and flawlessly executed. <br><br>
+                Our journey began with a simple belief : <br>every event,no matter how big or small,has the power to create lasting memories.Drives by this passion,we have successfully orchestrated a diverse range of events,each tailored to meet the unique needs and desires of our clients.we take the time o understand your vision,and we work tirelessly to bring it to life with creativity and professionalism. <br><br>
+                At gala events,we offer a comprehensive suite of services,including event design,vendor coordination,logistices management,and on-site supervision.Our team of experienced planners,designers,and coordinators and commited to providing personalized service and innnovative solutions to ensure your eventis a resounding success. <br><br>
+                join us on a journey of exceptional event planning. let's create something extraordinary together.
+                <br><br>
+                <a href="#gallery" class="btn clr">See Previous Events</a>
+            </p>
+            <img src="./image.png" alt="">
+        </div>
+    </section>
+
+    <!---gallery--->
+
+    <h1 class="title ah" style="background-color: rgb(20, 20, 20); padding:20px; color: rgb(253, 249, 249);">Our Gallery</h1>
+        <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="panel active" style="background-image: url(./10.jpg); ">
+            <h1 style="background-color: transparent; color: black; text-shadow: 0 0 40px white; ">Our client arrange  <br> office trip with us</h1>
+            </div>
+            <div class="panel ch" style="background-image: url(./1.jpg); color: black;">
+            <h1 >Our media conference arrangement</h1>
+            </div>
+            <div class="panel" style="background-image: url(./9.jpg);">
+            <h1>Our client launch there new product </h1>
+            </div>
+            <div class="panel" style="background-image: url(./7.jpg);">
+            <h1>Our biggest musiacal concert <br> Our pride</h1>
+            </div>
+            <div class="panel" style="background-image: url(./8.jpg);">
+            <h1>Our Educational meeting arrangement</h1>
+            </div>
+            <div class="panel" style="background-image: url(./3.jpg);">
+            <h1>Our client meeting arranged in hotel</h1>
+            </div>
+            <div class="panel" style="background-image: url(./5.jpg);">
+            <h1>New Movie Trailer Launch with over 1000 people</h1>
+            </div>
+            <div class="panel" style="background-image: url(./11.jpg);">
+            <h1>Our reunion arrangement for my client</h1>
+            </div>
+            <div class="panel" style="background-image: url(./2.jpg);">
+            <h1>Our music concert arrangement</h1>
+            </div>
+            <div class="panel" style="background-image: url(./4.jpg);">
+            <h1>Our biggest dance show stage you see</h1>
+            </div>
+            <div class="panel" style="background-image: url(./6.jpg);">
+            <h1>Our dinning hall after the meeting</h1>
+            </div>
+        </div>
+        </section>
+
+        
+    <!---feedback--->
+
+        <section class="feedback" id="feedback">
+            <h1 class="ah">Our customer says</h1>
+            <p>Our precioues customer say this feedback for our contribution</p>
+
+            <div class="rows">
+                <div class="feedback-col">
+                    <img src="./user1.png">
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui vitae eaque.
+
+                    <h3>Shiflina nilofar</h3>
+
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+        
+                <div class="feedback-col">
+                    <img src="./user2.png">
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui vitae eaque.
+
+                    <h3>Sameera faiz</h3>
+                    
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+
+                <div class="feedback-col">
+                    <img src="./user3.png">
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui vitae eaque.
+
+                    <h3>Christine berkey</h3>
+                    
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+    <!---footer--->
+    <h1 class="ah">< _ > &nbsp; Feel Free to contact us &nbsp; < _ ></h1>
+        
+    <section class="footer" id="footer">
+        
+        <footer class="foot">
+                <div class="row">
+                    <div class="foot-col">
+                        <h4>Company</h4>
+                        <hr><br>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affilate programs</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="foot-col">
+                        <h4>Get Help</h4><hr><br>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">decoration</a></li>
+                            <li><a href="#">food</a></li>
+                            <li><a href="#">speakers</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot-col">
+                        <h4>Online booking</h4><hr><br>
+                        <ul>
+                            <li><a href="#">wedding partys</a></li>
+                            <li><a href="#">birthday partys</a></li>
+                            <li><a href="#">reunion meetings</a></li>
+                            <li><a href="#">Political meetings</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot-col">
+                        <h4>Follow Us</h4><hr><br>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-instagram"></i>&nbsp;Event_Fusion</a></li>
+                            <li><a href="#"><i class="fa fa-whatsapp"></i>&nbsp;EventFusion</a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i>&nbsp;EventFusion</a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i>&nbsp;EventFusion</a></li>                           
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="copyright">@CopyRight and made with love by shiflina nilofar p</h2>
+        </footer>
+
+
+
+
+        <script>
+
+        const panels=document.querySelectorAll(".panel");
+
+        panels.forEach((panel) => {
+            panel.addEventListener("click",()=>{
+                removeActiveClasses();
+                panel.classList.add("active");
+            });
+        });
+
+        function removeActiveClasses(){
+            panels.forEach((panel) => {
+                panel.classList.remove("active");
+            })
+        }
+
+        // login toggle
+document.addEventListener("DOMContentLoaded", function() {
+    showPopup();
+
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        closePopup();
+    });
+
+    document.getElementById("signup-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        closePopup();
+    });
+});
+
+function showPopup() {
+    document.getElementById("popup-login").style.display = "flex";
+    showLogin(); 
+}
+
+function closePopup() {
+    document.getElementById("popup-login").style.display = "none";
+}
+
+function showLogin() {
+    document.getElementById("login-form-container").style.display = "block";
+    document.getElementById("signup-form-container").style.display = "none";
+    document.getElementById("login-toggle").classList.add("active");
+    document.getElementById("signup-toggle").classList.remove("active");
+}
+
+function showSignUp() {
+    document.getElementById("login-form-container").style.display = "none";
+    document.getElementById("signup-form-container").style.display = "block";
+    document.getElementById("login-toggle").classList.remove("active");
+    document.getElementById("signup-toggle").classList.add("active");
+}
+
+        </script>
+
+    </section>
+</body>
+</html>

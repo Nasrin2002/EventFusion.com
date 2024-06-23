@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.homepage{
+    background-image: url(./huge-decorative-circle-made-willow-greenery-pale-orange-roses-with-burning-candles_8353-10644.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-position: center;
+    overflow: hidden;
+    max-height: 100%;
+    margin: 0px;
+}
+
+.logo{
+    font-size: 40px;
+    color: white;
+    background-color: rgb(20, 20, 20); 
+}
+.logo span{
+    color: cyan;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    justify-content: space-between;
+    padding: 10px 40px;
+    height: 80px;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.6s;
+}
+
+.navlink ul{
+    list-style: none;
+    display: flex;
+}
+.navlink ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.navlink ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 20px cyan ;
+}
+.navlink ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(241, 241, 243);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlink ul li:hover::after{
+    width:100%;
+}
+.dropdown{
+    display: none;  
+}
+.navlink ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(20, 20, 20);
+    
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+.dropdown ul li a{
+    font-size: 20px;
+    text-decoration: none;
+} 
+.text_home{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 30px;
+    margin-bottom: 0px;
+    padding: 80px 20px;
+
+}
+.text_home h1{
+    font-size: 45px;
+    gap: 1px;
+    width: 100%;
+    color: cyan;
+    text-align: left;
+    background-color: transparent;
+}
+.text_home p{
+    font-size: 28px;
+    text-shadow: 0 0 20px white;
+    gap: 0.5px;
+    width: 45%;
+    color: white;
+    animation: slideLeft 1s ease forwards;
+}
+.btn{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(14, 235, 235);
+    border: 1px solid rgb(14, 235, 235);
+    margin:  5px 13px;
+    padding:12px 40px;
+    font-size: 22px;
+    border-radius: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 20px white;
+    transition: 1s;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 40px;
+}
+.btn:hover{   
+    background: rgb(14, 235, 235) ;
+    color: rgb(29, 7, 49);
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 75px cyan;
+    padding: 20px 40px;
+}
+.clr{
+    color: gold;
+    border: 1px solid gold;
+    box-shadow:0 0 20px rgb(243, 215, 58);
+}
+.clr:hover{
+    background: gold;
+    color: black;
+    box-shadow: 0 0 5px gold,0 0 25px gold,0 0 50px gold,0 0 75px gold;
+
+}
+@keyframes slideLeft {
+    0%{
+      transform: translateX(100px);
+      opacity: 0;  
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;    
+    }
+}
+
+/*about me*/
+.aboutme{
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ah{
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 20px white;
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 20px 10px;
+}
+.ah span{
+    color: gold;
+} 
+.aboutme p{
+    font-size: 20px;
+    color: white;
+    width: 50%;
+    padding: 30px 20px;
+    float: left;
+    margin: 10px 30px;
+    text-shadow: 0 0 10px gold;
+}
+.aboutme img{
+    float: right;
+    width: 35%;
+    height: 420px;
+    margin: 20px 30px;
+    border-radius: 30px;
+    filter: blur(3px);
+    box-shadow: 0 0 5px gold,0 0 25px gold,0 0 50px gold,0 0 75px gold;
+    transition: 1s;
+}
+.aboutme img:hover{
+    filter: blur(0);
+    width: 450px;
+    height: 430px;
+}
+
+        .gallery{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            background-color: rgb(20, 20, 20);
+        }
+        .container{
+            display: flex;
+            width: 90vw;
+        }
+        .panel{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 80vh;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            flex: 0.5;
+            margin: 10px;
+            box-shadow: 0 0 10px rgb(95, 252, 252);
+            position: relative;
+            transition: 1s;
+        }
+        .ch h1{
+            color: black;
+        }
+        .panel:hover{
+            box-shadow: 0 0 40px rgb(95, 252, 252);
+        }
+        .panel h1{
+            font-size: 35px;
+            text-shadow: 0 0 40px black;
+            background-color: transparent;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            margin: 0;
+            opacity: 0;
+        }
+        .panel.active{
+            flex: 5;
+        }
+        .panel.active h1{
+            opacity: 1;
+            transition: opacity 0.3s ease-in 0.4s;
+        }
+        /*customer feedback start*/
+
+        .feedback{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+            background-color: rgb(20, 20, 20);
+        }
+        .feedback-col{
+            width: 300px;
+            height: 140px;
+            margin: 15px 10px;
+            flex-basis: 44%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            text-align: left;
+            background: #c9a9a9c9;
+            padding: 25px;
+            cursor: pointer;
+            display: inline-flex;
+        }
+        .feedback-col img{
+            height: 40px;
+            margin-left: 5px;
+            margin-right: 30px;
+            border-radius: 50%;
+        }
+        .feedback p{
+            color: white;
+            text-shadow: 0 0 20px white;
+            font-size: 16px;
+            padding: 0;
+        }
+        .feedback-col h3{
+            margin-top: 15px;
+            text-align: left;
+        }
+        .feedback-col .fa{
+            color: #f44336;
+        }
+        @media(max-width:700px){
+            .feedback-col img{
+                margin-left: 0px;
+                margin-right: 15px;
+            }
+        }
+
+
+
+        /*customer feedback end*/
+        
+
+        @media (max-width:480px){
+            .container{
+                width: 100vw;
+                transition: opacity 0.3s ease-in 0.4s;
+            }
+            .panel:nth-of-type(4),
+            .panel:nth-of-type(5){
+                display: none;
+            }
+            
+        }
+
+        .footer{
+            background-color: rgb(20, 20, 20);
+            display: flex;
+        }
+        .row{
+            display: inline-flex;
+            flex-wrap: wrap;
+            padding: 30px 40px;
+        }
+        .foot-col{
+            padding: 30px 40px;
+            margin: 20px 25px;
+        }
+        .foot-col h4{
+            color: white;
+            font-size: 30px;
+            transition: 2s;
+        }
+        .foot-col ul li{
+            text-decoration: none;
+            list-style: none;
+        }
+        .foot-col ul li a{
+            text-decoration: none;
+            color: white;
+            text-shadow: gold;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        .copyright{
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            padding: 20px;
+        }
+
+    /*login*/
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 30px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 30px cyan;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    padding: 10px;
+    width: 120px;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: rgb(25, 0, 37);
+    box-shadow: 0 0 20px cyan;
+    text-align: center;
+    color: cyan;
+    border: none;
+    cursor: pointer;
+}
+
+.form-toggle button.active {
+    box-shadow: 0 0 30px cyan,0 0 30px cyan,0 0 30px cyan,0 0 30px cyan;
+    background-color: cyan;
+    color: rgb(25, 0, 37);
+}
+
+.form-container {
+    display: none;
+}
+.logintitle{
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px cyan;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    height: 15px;
+    border-radius: 20px;
+    border: 1px solid cyan;
+    box-shadow: 0 0 10px cyan;
+    margin:13px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: rgb(25, 0, 37);
+    box-shadow: 0 0 20px cyan;
+    text-align: center;
+    color: cyan;
+    border: 1px solid cyan;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    box-shadow: 0 0 20px cyan,0 0 20px cyan,0 0 20px cyan,0 0 20px cyan;
+    background-color: cyan;
+    color: rgb(25, 0, 37);
+}
