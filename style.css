@@ -375,10 +375,10 @@
     background-color: transparent;
     backdrop-filter: blur(40px);
     border-radius: 30px;
+    box-shadow: 0 0 40px cyan;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    box-shadow: 0 0 20px cyan;
     width: 300px;
     position: relative;
 }
@@ -413,7 +413,7 @@
 }
 
 .form-toggle button.active {
-    box-shadow: 0 0 30px cyan,0 0 30px cyan,0 0 30px cyan,0 0 30px cyan;
+    box-shadow: 0 0 30px cyan,0 0 20px cyan;
     background-color: cyan;
     color: rgb(25, 0, 37);
 }
