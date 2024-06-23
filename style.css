@@ -378,6 +378,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    box-shadow: 0 0 20px cyan;
     width: 300px;
     position: relative;
 }
